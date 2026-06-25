@@ -1,0 +1,66 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #98888e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+
+  }
+
+  .stick {
+    height: 30px;
+    width: 400px;
+    background-color: #f3eaf4;
+    border-radius: 30px;
+  }
+
+  .div2 {
+    position: absolute;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+     margin-bottom:17px;
+    transform: rotate(90deg);
+    gap: 240px;
+  }
+
+  .s5,.s6 {
+    width: 420px;
+  }
+
+   .div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+     transform: rotate(90deg);
+     gap: 210px;
+   }

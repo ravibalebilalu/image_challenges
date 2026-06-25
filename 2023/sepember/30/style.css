@@ -1,0 +1,103 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #07080B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .mainbox {
+        height: 475px;
+        width: 475px;
+        background-color: #051923;
+        position: relative;
+        overflow: hidden;
+        gap: 23px;
+      }
+
+      .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .smallbar {
+        height: 160px;
+        width: 40px;
+        background-color: #006494;
+        animation: smallbar-anim 2s infinite;
+      }
+      @keyframes smallbar-anim{
+        0%{width: 0px;}
+      }
+
+
+
+      .center {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .upper,
+      .lower {
+        height: 225px;
+        width: 60px;
+        background-color: #006494;
+      }
+
+      .upper {
+        align-items: start;
+        animation: upper-anim 2s infinite;
+      }
+
+      @keyframes upper-anim {
+        0% {
+          transform: rotate3d(1,0,0,360deg);
+        }
+      }
+
+      .lower {
+        align-items: end;
+        animation: lower-anim 2s infinite;
+      }
+
+      @keyframes lower-anim {
+        0% {
+           transform: rotate3d(1,0,0,-360deg);
+        }
+      }
+
+      .circle {
+        height: 35px;
+        width: 35px;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .upper .circle {
+        margin-top: 30px;
+      }
+
+      .lower .circle {
+        margin-bottom: 30px;
+      }
+
+
+      .bigbar {
+        height: 220px;
+        width: 60px;
+        background-color: #006494;
+        animation: bigbar-anim 2s infinite;
+      }
+
+      @keyframes bigbar-anim{
+        0%{width: 0px;}
+      }

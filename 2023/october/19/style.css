@@ -1,0 +1,82 @@
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     height: 100vh;
+     width: 100vw;
+     background-color: #07080B;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+   }
+
+   .mainbox {
+
+     height: 475px;
+     width: 475px;
+     background-color: #680e4b;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     overflow: hidden;
+gap:170px;
+   }
+
+   .upper-box,
+   .lower-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 270px;
+   }
+
+   .box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 18px;
+   }
+
+   .circle {
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     background-color: #854798;
+   }
+
+   .square {
+     height: 50px;
+     width: 50px;
+     background-color: #854798;
+   }
+
+   .upper-box .box:nth-child(1) {
+     transform: rotate(-45deg);
+   }
+
+   .upper-box .box:nth-child(2) {
+     transform: rotate(45deg);
+   }
+
+   .lower-box .box:nth-child(1) {
+     transform: rotate(-135deg);
+   }
+
+   .lower-box .box:nth-child(2) {
+     transform: rotate(135deg);
+   }
+
+   .center-circle{
+    height: 220px;
+    width: 240px;
+    border-radius: 50%;
+    border: 45px solid #854798;
+    position: absolute;
+    transform: rotate3d(1,0,0,60deg);
+   }

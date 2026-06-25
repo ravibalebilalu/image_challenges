@@ -1,0 +1,139 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    place-items: stretch;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #6d7275;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .box1 {
+    background-color: #0c120c;
+    grid-column: 4/10;
+    grid-row: 4/10;
+    transform: rotate(45deg);
+    height: 145%;
+    width: 145%;
+    place-self: center;
+  }
+
+  .box2 {
+    background-color: #6d7275;
+    grid-column: 5/9;
+    grid-row: 5/9;
+    z-index: 100;
+    transform: rotate(45deg);
+
+  }
+
+  .inner-left-circle,
+  .inner-right-circle {
+    background-color: #6d7275;
+    border-radius: 50%;
+    z-index: 100;
+    height: 76%;
+    width: 150%;
+    place-self: center;
+     
+  }
+ 
+  .inner-left-circle {
+    grid-column: 4/5;
+    grid-row: 6/8;
+
+  }
+
+  .inner-right-circle {
+    grid-column: 9/10;
+    grid-row: 6/8;
+
+  }
+
+  .triangle {
+
+    background-color: #6d7275;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    place-self: center;
+  }
+
+  .t1 {
+    transform: rotate(90deg);
+    grid-column: 6/8;
+    grid-row: 1/2;
+    height: 400%;
+    width: 100%;
+
+  }
+
+  .t2 {
+    transform: rotate(180deg);
+    grid-column: 12/13;
+    grid-row: 6/8;
+    height: 200%;
+    width: 200%;
+  }
+
+  .t3 {
+    transform: rotate(270deg);
+    grid-column: 6/8;
+    grid-row: 12/13;
+    height: 400%;
+    width: 100%;
+  }
+
+  .t4 {
+    transform: rotate(0deg);
+    grid-column: 1/2;
+    grid-row: 6/8;
+    height: 200%;
+    width: 200%;
+  }
+
+  .outer-circle {
+    background-color: #6d7275;
+    border-radius: 50%;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c1 {
+    grid-row: 3/5;
+    grid-column: 3/5;
+  }
+
+
+  .c2 {
+    grid-row: 3/5;
+    grid-column: 9/11;
+  }
+
+
+  .c3 {
+    grid-row: 9/11;
+    grid-column: 3/5;
+  }
+
+
+  .c4 {
+    grid-row: 9/11;
+    grid-column: 9/11;
+  }

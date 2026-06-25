@@ -1,0 +1,68 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #7d1128;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .left,
+  .right {
+    height: 240px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #e2294f;
+  }
+
+  .markleft,
+  .markright {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #7d1128;
+    position: absolute;
+  }
+
+  .markleft {
+    top: 200px;
+    left: 130px;
+  }
+
+  .markright {
+    top: 80px;
+    left: 235px;
+  }
+
+  .lower {
+    height: 30px;
+    width: 250px;
+    background-color: #e2294f;
+    border-radius: 30px;
+  }

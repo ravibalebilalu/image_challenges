@@ -1,0 +1,166 @@
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+
+
+   body {
+     height: 100vh;
+     width: 100vw;
+     background-color: #454372;
+     display: grid;
+     place-items: stretch;
+     place-content: center;
+   }
+
+   .mainbox {
+     height: 475px;
+     width: 475px;
+     background-color: #454372;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+margin-bottom:30px;
+   }
+
+   .box {
+     background-color: #ef946c;
+   }
+
+   .b1 {
+     grid-row: 4/10;
+     grid-column: 2/12;
+     margin: 25px 0px;
+   }
+
+   .b2 {
+     grid-row: 2/12;
+     grid-column: 4/10;
+     margin: 25px 10px;
+
+   }
+
+   .upper-diamonds {
+     grid-column: 2/12;
+     grid-row: 3/5;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 230px;
+
+   }
+
+   .diamond {
+     height: 25px;
+     width: 25px;
+     background-color: #ef946c;
+     margin-bottom: 20px;
+   }
+
+   .d1 {
+     place-self: end end;
+
+   }
+
+   .d2 {
+     place-self: end start;
+   }
+
+   .lower-diamands {
+     grid-column: 1/13;
+     grid-row: 10/13;
+
+     display: grid;
+     grid-template: repeat(5, 1fr)/repeat(1, 1fr);
+     margin-top: -20px;
+   }
+
+   .step1 {
+     grid-row: 1/2;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: end center;
+     gap: 30px;
+
+   }
+
+   .lower-diamands .diamond {
+     margin-bottom: 0px;
+   }
+
+
+   .step2 {
+     grid-row: 2/3;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: end center;
+     gap: 110px;
+
+   }
+
+   .step3 {
+     grid-row: 3/4;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: end center;
+     gap: 215px;
+
+   }
+
+   .step4 {
+     grid-row: 4/5;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: end center;
+     gap: 315px;
+
+   }
+
+   .step5 {
+     grid-row: 5/6;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     place-items: end center;
+     gap: 420px;
+
+   }
+
+   .circle1 {
+
+     background-color: #454372;
+     border-radius: 50%;
+     grid-row: 5/9;
+     grid-column: 3/11;
+     place-items: center;
+     display: grid;
+     margin:20px 10px;
+   }
+
+   .circle2 {
+     height: 90%;
+     width: 85%;
+     background-color: #ef946c;
+     border-radius: 50%;
+     display: grid;
+   }
+
+
+   .circle3 {
+     height: 90%;
+     width: 85%;
+     background-color: #454372;
+     border-radius: 50%;
+     display: grid;
+     place-self: center;
+   }
+
+   .circle4 {
+     height: 90%;
+     width: 80%;
+     background-color: #ef946c;
+     border-radius: 50%;
+     display: grid;
+     place-self: center;
+   }

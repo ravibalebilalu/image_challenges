@@ -1,0 +1,92 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #c1edcc;
+    position: relative;
+    overflow: hidden;
+    gap: 25px;
+    flex-direction: column;
+
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eyes {
+    display: flex;
+    gap: 100px;
+  }
+
+  .le,
+  .re {
+    height: 120px;
+    width: 120px;
+    background-color: #b0c0bc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .lense {
+    height: 60px;
+    width: 60px;
+    background-color: #c1edcc;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .nose {
+    height: 120px;
+    width: 30px;
+    background-color: #b0c0bc;
+    border-radius: 20px;
+  }
+
+  .mustache {
+    display: flex;
+    gap: 40px;
+
+  }
+
+  .left,
+  .right {
+    height: 15px;
+    width: 70px;
+    background-color: #b0c0bc;
+    border-radius: 10px;
+  }
+
+  .right {
+    transform: rotate(15deg);
+  }
+
+  .left {
+    transform: rotate(-15deg);
+  }
+
+  .mouth {
+    height: 70px;
+    width: 250px;
+    background-color: #b0c0bc;
+    border-radius: 50%;
+  }

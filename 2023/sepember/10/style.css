@@ -1,0 +1,96 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #49475b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .upper,
+  .lower {
+    display: flex;
+    gap: 90px;
+  }
+
+  .lower .left {
+    transform: rotate(-145deg);
+  }
+
+  .lower .right {
+    transform: rotate(145deg);
+  }
+
+  .half-circle {
+    position: relative;
+  }
+
+  .circle {
+    height: 110px;
+    width: 110px;
+    background-color: #acc196;
+    border-radius: 50%;
+  }
+
+  .box {
+    height: 55px;
+    width: 110px;
+    background-color: #49475b;
+    position: absolute;
+    top: 60px;
+  }
+
+  .center {
+    position: relative;
+  }
+
+  .circle1,
+  .circle2,
+  .circle3 {
+
+    background-color: #acc196;
+    position: absolute;
+  }
+
+  .circle1 {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    top: 15px;
+    left: -45px;
+  }
+
+  .circle2 {
+    height: 65px;
+    width: 50px;
+    border-radius: 50%;
+    top: -17px;
+    left: -35px;
+  }
+
+  .circle3 {
+    height: 45px;
+    width: 30px;
+    border-radius: 50%;
+    top: -50px;
+    left: -27px;
+  }

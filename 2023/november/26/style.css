@@ -1,0 +1,85 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    place-items: stretch;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #020402;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+
+  }
+
+  .big-circle {
+    background-color: #c5efcb;
+    border-radius: 50%;
+    grid-area: 2/2/12/12;
+    height: 100%;
+    width: 100%;
+    place-self: center;
+  }
+
+  .circle {
+    background-color: #020402;
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    place-self: center;
+  }
+
+  .c1 {
+    grid-area: 2/2/5/5;
+  }
+
+  .c2 {
+    grid-area: 2/9/5/12;
+  }
+
+  .c3 {
+    grid-area: 9/2/12/5;
+  }
+
+  .c4 {
+    grid-area: 9/9/12/12;
+  }
+
+  .box {
+    background-color: #020402;
+
+    height: 100%;
+    width: 100%;
+    transform: rotate(45deg);
+  }
+
+  .box1 {
+    grid-area: 4/5/8/9;
+
+  }
+
+  .box2 {
+    grid-area: 6/5/10/9;
+    transform: scale(.8) rotate(45deg);
+  }
+
+  .box3 {
+    grid-area: 8/5/12/9;
+    transform: scale(.5) rotate(45deg);
+place-items: start;
+  }

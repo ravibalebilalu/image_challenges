@@ -1,0 +1,89 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 500px;
+    width: 500px;
+    background-color: #9b9fb5;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+
+  .eye {
+    background-color: #7a6174;
+    border-radius: 50%;
+    height: 135%;
+    width: 135%;
+    place-self: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .left-eye {
+    grid-area: 6/2/10/6;
+
+  }
+
+
+  .right-eye {
+    grid-area: 6/8/10/12;
+
+
+  }
+
+  .white-plate {
+    height: 80%;
+    width: 50%;
+    background-color: #9b9fb5;
+    border-radius: 50%;
+    display: grid;
+    place-self: center;
+    place-items: center start;
+
+  }
+
+  .ball {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #7a6174;
+    margin: 12px;
+  }
+
+  .eye-brow {
+    background-color: #7a6174;
+    height: 35%;
+     width: 100%;
+    
+  }
+
+  .left-eb {
+    grid-area: 3/2/5/5;
+    transform: rotate(-23deg);
+     align-self:center;
+    justify-self:end;
+  }
+
+  .right-eb {
+    grid-area: 3/8/5/11;
+    transform: rotate(23deg);
+     align-self:center;
+    justify-self:end;
+     
+  }

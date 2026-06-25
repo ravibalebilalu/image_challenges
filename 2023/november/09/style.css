@@ -1,0 +1,93 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    place-items: stretch;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #afc1d6;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .left-eye,
+  .right-eye {
+
+    background-color: #655a7c;
+    border-radius: 50%;
+    height: 110%;
+    width: 110%;
+    place-self: center;
+  }
+
+  .left-eye,
+  .right-eye {
+    display: grid;
+    grid-template: repeat(5, 1fr)/repeat(5, 1fr);
+
+
+    transform: rotate(-45deg);
+
+  }
+
+  .left-eye {
+    grid-column: 2/6;
+    grid-row: 3/7;
+  }
+
+  .right-eye {
+    grid-column: 8/12;
+    grid-row: 3/7;
+
+  }
+
+  .mouth {
+    grid-column: 5/9;
+    grid-row: 7/11;
+    border: 17px solid #655a7c;
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    place-self: center;
+  }
+
+  .mask {
+    grid-row: 7/9;
+    grid-column: 5/9;
+    background-color: #afc1d6;
+
+  }
+
+  .shine {
+    height: 55%;
+    width: 95%;
+    background-color: #afc1d6;
+
+  }
+
+  .shine:nth-child(1) {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: center;
+  }
+
+  .shine:nth-child(2) {
+    grid-row: 3/4;
+    grid-column: 3/5;
+    align-self: start;
+  }

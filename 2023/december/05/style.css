@@ -1,0 +1,38 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #000000;
+      display: grid;
+      place-items: stretch;
+      place-content: center;
+    }
+
+    .mainbox {
+      height: 475px;
+      width: 475px;
+      background-color: #957d95;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+
+    }
+
+    .box {
+      place-self: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .box:nth-child(odd) {
+      border: 32px solid #eccfc3;
+
+    }

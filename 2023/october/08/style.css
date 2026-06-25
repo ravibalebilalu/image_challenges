@@ -1,0 +1,90 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #231651;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame {
+    overflow: hidden;
+    background-color: #231651;
+    width: 90%;
+    height: 90%;
+  }
+
+  .box {
+    height: 470px;
+    width: 240px;
+    background-color: #d6fff6;
+    transform: perspective(400px) skew(23deg);
+  }
+
+  .shadow {
+    height: 470px;
+    width: 160px;
+    background-color: #231651;
+    transform: perspective(400px) skew(-23deg);
+    position: absolute;
+
+  }
+.circles{
+ position: absolute;
+}
+  .circle{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color:#d6fff6;
+    position: absolute;
+     
+  }
+  .circle:nth-child(1){
+    left: -80px;
+    top: -135px;
+  }
+
+    .circle:nth-child(2){
+    left: 0px;
+    top: 45px;
+  }
+
+ 
+  .star-holder{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  gap: 224px;
+    position: absolute;
+    transform: rotate(-41deg);
+  }
+
+  .star{
+    height: 35px;
+    width: 35px;
+    background-color: #d6fff6;
+  } 
+  

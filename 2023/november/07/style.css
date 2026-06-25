@@ -1,0 +1,127 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    place-items: stretch;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #e40066;
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr)
+  }
+
+  .left-circle {
+    grid-row: 4/10;
+    grid-column: 1/7;
+    background-color: #eac435;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    align-self: center;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .center-circle {
+    grid-row: 4/10;
+    grid-column: 4/10;
+    height: 150px;
+    width: 150px;
+    background-color: #eac435;
+    border-radius: 50%;
+    align-self: center;
+
+
+    display: grid;
+
+  }
+
+  .bar {
+    grid-row: 6/8;
+    grid-column: 7/12;
+    background-color: #eac435;
+    height: 30px;
+    align-self: center;
+  }
+
+  .right-head {
+    grid-column: 10/13;
+    grid-row: 6/8;
+    background-color: #eac435;
+    height: 70%;
+    width: 90px;
+    align-self: center;
+    border-radius: 20px;
+    margin-left: 20px;
+    display: grid;
+    place-items: center;
+    gap: 9px;
+  }
+
+  .left-bar {
+    height: 75px;
+    width: 14px;
+    background-color: #e40066;
+    border-radius: 20px;
+  }
+
+  .middle-circle {
+    height: 80px;
+    width: 80px;
+    background-color: #e40066;
+    border-radius: 50%;
+    place-self: center;
+    display: grid;
+  }
+
+  .middle-circle-1 {
+    height: 68px;
+    width: 68px;
+    background-color: #eac435;
+    border-radius: 50%;
+    place-self: center;
+    display: grid;
+  }
+
+  .middle-circle-2 {
+    height: 56px;
+    width: 56px;
+    background-color: #e40066;
+    border-radius: 50%;
+    place-self: center;
+  }
+
+  .right-bar {
+    height: 12px;
+    width: 40px;
+    background-color: #e40066;
+    border-radius: 20px;
+  }
+
+  .upper-bar {
+    align-self: end;
+
+  }
+
+  .lower-bar {
+    align-self: flex-start;
+  }

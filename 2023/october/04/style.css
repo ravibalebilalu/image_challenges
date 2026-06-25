@@ -1,0 +1,125 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #474044;
+    position: relative;
+    overflow: hidden;
+
+
+
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bone-div {
+    position: relative;
+    left: -140px;
+    top: -65px;
+  }
+
+  .bone-one,
+  .bone-two {
+    gap: 330px;
+  }
+
+  .bone-one {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .bone-two {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+  .circle {
+    height: 50px;
+    width: 50px;
+    background-color: #f6d0b1;
+    border-radius: 50%;
+  }
+
+  .circle:nth-child(2) {
+    position: relative;
+    top: -20px;
+  }
+
+  .bone-body {
+    height: 30px;
+    width: 40px;
+    background-color: #f6d0b1;
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
+
+  .right {
+    transform: rotate(180deg);
+    position: relative;
+    top: -20px;
+  }
+
+  .face {
+    height: 250px;
+    width: 230px;
+    background-color: #f6d0b1;
+    border-radius: 50%;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .bottom-patch {
+    height: 100px;
+    width: 300px;
+    background-color: #474044;
+    gap: 10px;
+  }
+
+  .tooth {
+    height: 40px;
+    width: 25px;
+    background-color: #f6d0b1;
+  }
+
+  .eyes {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    margin-top: 70px;
+  }
+
+  .le,
+  .re {
+    height: 80px;
+    width: 55px;
+    background-color: #474044;
+    border-radius: 50%;
+  }
+
+  .le {
+    transform: rotate(-55deg);
+  }
+
+  .re {
+    transform: rotate(50deg);
+  }

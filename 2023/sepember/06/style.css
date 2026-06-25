@@ -1,0 +1,47 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainbox{
+    height: 475px;
+    width: 475px;
+    background-color:#ff6ebc ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 5rem;
+    
+}
+
+.stick{
+ 
+    width: 3.3rem;
+    background-color: #14477c;
+    border-radius: 2.5rem;
+    animation: bars 4s infinite;
+}
+@keyframes bars{
+
+    0%{width: 0rem; transform: rotate(180deg)  ;}
+    50%{width: 3.3rem;transform: rotate(-180deg);}
+    100%{width: 3.3rem;transform: rotate( 180deg)  ;}
+}
+
+.left{height: 12rem;}
+.center{height: 16.5rem;}
+.right{height: 12rem;}
+
+ 

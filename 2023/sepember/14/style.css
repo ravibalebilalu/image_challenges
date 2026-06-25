@@ -1,0 +1,53 @@
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   height: 100vh;
+   width: 100vw;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .mainbox {
+   height: 475px;
+   width: 475px;
+   background-color: #e62510;
+   position: relative;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .handset{
+  width: 200px;
+  height: 400px;
+  background-color:rgb(228, 228, 203);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  
+ }
+
+ .screen{
+  width: 180px;
+  height: 250px;
+  background-color: #e62510;
+  border-radius: 30px;
+  
+ }
+
+ .button{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background-color: #e62510;
+ }

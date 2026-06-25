@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  display: grid;
+  place-items: stretch;
+  place-content: center;
+}
+
+.mainbox {
+  height: 475px;
+  width: 475px;
+  background-color: #aa4465;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+}
+
+.bigbox {
+  background-color: #861657;
+  grid-area: 2/3/12/11;
+  border-radius: 130px 130px 50px 50px;
+  place-self: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+}
+
+.circle {
+  border: 12px solid #aa4465;
+  border-radius: 50%;
+
+  height: 100%;
+  width: 100%;
+}
+
+.c1 {
+  grid-area: 4/3/7/6;
+  align-self: center;
+  height: 85%;
+  width: 100%;
+}
+
+.c2 {
+  grid-area: 3/8/5/10;
+
+  height: 110%;
+  width: 140%;
+
+}
+
+.bar {
+  background-color: #aa4465;
+
+}
+
+.b1 {
+  grid-area: 10/4/10/10;
+  height: 57%;
+  width: 87%;
+  border-radius: 30px;
+  place-self: end center;
+
+}
+
+.b2 {
+  grid-area: 12/5/11/9;
+  height: 32%;
+  width: 70%;
+  border-radius: 30px;
+  place-self: center;
+}
+
+.c3,
+.c4 {
+  background-color: #aa4465;
+  border-radius: 100px;
+  border: none;
+  height: 75%;
+  width: 80%;
+}
+
+.c3 {
+
+  grid-area: 1/4/4/7;
+  justify-self: end;
+}
+
+.c4 {
+  grid-area: 1/7/4/10;
+}

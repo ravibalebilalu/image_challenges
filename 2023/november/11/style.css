@@ -1,0 +1,34 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+    place-items: stretch;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color:#3b3355;
+    position: relative;
+    overflow: hidden;
+    
+display: grid;
+grid-template: 1fr/1fr;
+place-items: center;
+color: red;
+
+  }
+.box{
+   
+}
+   

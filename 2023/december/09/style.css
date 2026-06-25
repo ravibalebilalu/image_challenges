@@ -1,0 +1,93 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #201a23;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .box {
+    background-color: #631d76;
+  }
+
+  .b1 {
+    grid-area: 1/4/4/10;
+    width: 75%;
+    height: 80%;
+
+    place-self: start center;
+  }
+
+  .b2 {
+    grid-area: 6/1/8/6;
+    height: 110%;
+    width: 95%;
+    align-self: center;
+  }
+
+  .b3 {
+    grid-area: 6/8/8/13;
+    height: 110%;
+    width: 95%;
+    justify-self: end;
+    align-self: center;
+  }
+
+
+
+  .b4 {
+    grid-area: 10/4/13/10;
+    width: 75%;
+    height: 80%;
+    place-self: end center;
+
+  }
+
+  .round-bar {
+    background-color: #631d76;
+    border-radius: 20px;
+    height: 80%;
+    width: 100%;
+    place-self: center;
+  }
+
+  .rb1 {
+    grid-area: 1/2/5/3;
+  }
+
+  .rb2 {
+    grid-area: 1/11/5/12;
+  }
+
+  .rb3 {
+    grid-area: 9/2/13/3;
+  }
+
+  .rb4 {
+    grid-area: 9/11/13/12;
+  }
+
+  .diamond {
+    background-color: #631d76;
+    grid-area: 6/6/8/8;
+    transform: rotate(45deg) scale(.5);
+
+  }

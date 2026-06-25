@@ -1,0 +1,110 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #fefee3;
+    position: relative;
+    overflow: hidden;
+
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stomoch {
+    height: 250px;
+    width: 280px;
+    border-radius: 50%;
+    background-color: #d68c45;
+    align-items: start;
+    margin-top: 30px;
+    z-index: 2;
+  }
+
+
+  .mark {
+    height: 110px;
+    width: 200px;
+    background-color: #fefee3;
+    border-radius: 50%;
+    margin-top: 40px;
+
+  }
+
+  .face {
+    height: 200px;
+    width: 220px;
+    border-radius: 50%;
+    background-color: #d68c45;
+    align-items: start;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+  }
+
+  .eyes {
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+  }
+
+  .le,
+  .re {
+    height: 40px;
+    width: 40px;
+    background-color: #fefee3;
+    border-radius: 50%;
+  }
+
+  .top-circles,
+  .bottom-circles {
+
+    position: absolute;
+     
+  }
+
+  .top-circles {
+    gap:275px;
+    top:170px;
+  }
+
+  .bottom-circles {
+    gap: 155px;
+    top:374px;
+  }
+
+  .circle1,
+  .circle2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #d68c45;
+  }
+
+  .circle3,
+  .circle4 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #d68c45;
+  }
