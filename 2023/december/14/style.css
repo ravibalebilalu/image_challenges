@@ -1,0 +1,128 @@
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     height: 100vh;
+     width: 100vw;
+     background-color: #000000;
+     display: grid;
+
+     place-content: center;
+   }
+
+   .mainbox {
+     height: 475px;
+     width: 475px;
+     background-color: #044b7f;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+   }
+
+   .bar,
+   .circle {
+     background-color: #e3b505;
+   }
+
+   .b1,
+   .b2 {
+     height: 60%;
+     width: 100%;
+   }
+
+   .b1 {
+     grid-area: 1/1/3/13;
+
+   }
+
+   .b2 {
+     grid-area: 11/1/13/13;
+     align-self: end;
+   }
+
+   .b3,
+   .b4 {
+     width: 80%;
+     height: 105%;
+     place-self: center;
+   }
+
+   .b3 {
+     grid-area: 3/2/11/3;
+
+
+   }
+
+   .b4 {
+     grid-area: 3/11/11/12;
+   }
+
+   .b5,
+   .b6 {
+     height: 70%;
+     width: 70%;
+     place-self: center;
+   }
+
+   .b5 {
+     grid-area: 8/5/9/9;
+     align-self: end;
+   }
+
+   .b6 {
+     grid-area: 5/5/6/9;
+     align-self: start;
+   }
+
+   .b7 {
+     grid-area: 1/5/6/5;
+     width: 70%;
+     height: 90%;
+     transform: rotate(-15deg);
+   }
+
+   .b8 {
+     grid-area: 1/8/6/8;
+     width: 70%;
+     height: 90%;
+     transform: rotate(15deg);
+     justify-self: end;
+   }
+
+
+   .b9 {
+     grid-area: 8/8/13/8;
+     width: 70%;
+     height: 90%;
+     transform: rotate(-15deg);
+     align-self: end;
+     justify-self: end;
+   }
+
+   .b10 {
+     grid-area: 8/5/13/5;
+     width: 70%;
+     height: 90%;
+     transform: rotate(15deg);
+     place-self: end start;
+   }
+
+   .b11 {
+     grid-area: 6/6/8/8;
+     width: 40%;
+     height: 80%;
+     place-self: center;
+   }
+
+   .circle {
+     grid-area: 6/6/8/8;
+     place-self: center;
+     border-radius: 50%;
+     height: 60%;
+     width: 60%;
+   }
