@@ -1,0 +1,145 @@
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     height: 100vh;
+     width: 100vw;
+     background-color: #000000;
+     display: grid;
+
+     place-content: center;
+   }
+
+   .mainbox {
+     height: 475px;
+     width: 475px;
+     background-color: #89b0ae;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+
+   }
+
+
+   .box {
+     background-color: #555b6e;
+
+   }
+
+   .b1 {
+     grid-area: 1/5/3/13;
+     height: 60%;
+     width: 105%;
+     justify-self: end
+   }
+
+   .b2 {
+     grid-area: 1/11/10/13;
+     height: 94%;
+     width: 60%;
+     justify-self: end;
+   }
+
+   .b3 {
+     grid-area: 4/1/13/2;
+     height: 94%;
+     width: 115%;
+     align-self: end;
+   }
+
+   .b4 {
+     grid-area: 11/1/13/8;
+     align-self: end;
+     height: 60%;
+     width: 120%;
+
+   }
+
+   .b5 {
+     grid-area: 3/3/5/5;
+     place-self: center;
+     height: 60%;
+     width: 60%;
+   }
+
+   .b6 {
+     grid-area: 9/9/11/11;
+     place-self: center;
+     height: 60%;
+     width: 60%;
+   }
+
+   .patch {
+     background-color: #89b0ae;
+   }
+
+   .p1 {
+     grid-area: 1/6/2/7;
+     height: 120%;
+     width: 40%;
+
+   }
+
+   .p2 {
+     grid-area: 7/11/8/13;
+     height: 40%;
+     align-self: end;
+   }
+
+   .p3 {
+     grid-area: 6/1/7/2;
+     height: 50%;
+     width: 120%;
+
+   }
+
+   .p4 {
+     grid-area: 12/7/14/9;
+     height: 140%;
+     width: 20%;
+     place-self: center;
+   }
+
+   .b7,
+   .b8,
+  .b9{
+   background-color: transparent;
+     width: 100%;
+     height: 100%;
+    display:grid;
+    place-items:center;
+   }
+
+   .b7 {
+     grid-area: 5/7/7/9;
+
+   }
+
+   .b8 {
+     grid-area: 6/6/8/8;
+   }
+
+   .b9 {
+     grid-area: 7/5/9/7;
+      
+   }
+
+   .innerbox{
+    height: 60%;
+    width: 60%;
+    border-color: #555b6e;
+    border-style: solid;
+    border-width: 0px 0px 20px 20px ;
+   }
+
+  .b7 .innerbox{
+    place-self:start center;
+  }
+    .b9 .innerbox{
+    place-self:end start;
+  }

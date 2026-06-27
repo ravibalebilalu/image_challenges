@@ -1,0 +1,134 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   height: 100vh;
+   width: 100vw;
+   background-color: #000000;
+   display: grid;
+
+   place-content: center;
+ }
+
+ .mainbox {
+   height: 475px;
+   width: 475px;
+   background-color: #424651;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+   grid-auto-rows: auto;
+
+ }
+
+ .box {
+   background-color: #21fa90;
+ }
+
+ .box1 {
+   height: 40%;
+   width: 40%;
+ }
+
+ .box2 {
+   height: 65%;
+   width: 65%;
+   justify-self: center;
+ }
+
+ .box3 {
+   height: 40%;
+   width: 40%;
+   justify-self: end;
+ }
+
+ .box4 {
+   height: 65%;
+   width: 65%;
+   place-self: center start;
+ }
+
+ .box5 {
+   height: 70%;
+   width: 70%;
+   place-self: center;
+
+ }
+
+ .box6 {
+   height: 65%;
+   width: 65%;
+   place-self: center end;
+ }
+
+ .box7 {
+   height: 40%;
+   width: 40%;
+   align-self: end;
+ }
+
+ .box8 {
+   height: 65%;
+   width: 65%;
+   place-self: end center;
+ }
+
+ .box9 {
+   height: 40%;
+   width: 40%;
+   place-self: end;
+ }
+
+ .box11 {
+   height: 100%;
+   width: 100%;
+   transform: rotate(45deg);
+   background-color: #21fa90;
+
+ }
+
+ .circle {
+   background-color: #424651;
+   border-radius: 50%;
+
+ }
+
+
+ .c1 {
+   height: 50%;
+   width: 50%;
+ }
+
+ .box2,
+ .box4,
+ .box6,
+ .box8,
+ .box11 {
+   display: grid;
+   place-items: center;
+ }
+
+ .c2,
+ .c3,
+ .c4,
+ .c5 {
+   height: 30%;
+   width: 50%;
+ }
+
+  .circle{
+  animation: circle-anim 2s infinite;
+ }
+
+ @keyframes  circle-anim{
+  30%{width: 0%;height: 0%;  opacity: 0;}
+  60%{width: 0%;height: 0%; opacity:.8}
+ }
+
+ .box11{
+  animation: box-anim 2s infinite;
+ }
