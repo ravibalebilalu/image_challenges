@@ -1,0 +1,95 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #2176ff;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .bar {
+    background-color: #f79824;
+    place-self: center;
+  }
+
+
+  .vert-bar {
+    grid-area: 2/6/12/8;
+    width: 80%;
+    height: 100%;
+
+  }
+
+  .horz-bar {
+    grid-area: 6/2/8/12;
+    width: 100%;
+    height: 80%;
+  }
+
+  .box {
+    background-color: #f79824;
+  }
+
+  .box1 {
+    grid-area: 2/2/5/5;
+    display: grid;
+    place-items: center;
+  }
+
+  .box11 {
+    background-color: #2176ff;
+    height: 70%;
+    width: 70%;
+    transform: rotate(45deg);
+  }
+
+  .box2 {
+    grid-area: 2/9/5/12;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+
+  }
+
+  .box21 {
+    background-color: #2176ff;
+    grid-area: 2/9/5/12;
+    height: 70%;
+    width: 60%;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    place-self: center;
+  }
+
+  .box3 {
+    grid-area: 9/2/12/5;
+    border-radius: 50%;
+    border: 20px solid #f79824;
+    background-color: #2176ff;
+    place-self: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .box4 {
+    grid-area: 9/9/12/12;
+    height: 100%;
+    width: 100%;
+    place-self: center;
+    border: 20px solid #f79824;
+    background-color: #2176ff;
+  }
