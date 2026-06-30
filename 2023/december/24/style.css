@@ -1,0 +1,65 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #66635b;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .bar {
+    background-color: #d7ceb2;
+    border-radius: 40px;
+    width: 84%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+    gap: 260px;
+  }
+
+  .b1 {
+    grid-area: 1/3/12/5;
+
+    place-self: center end;
+  }
+
+  .b2 {
+    grid-area: 1/6/12/8;
+    height: 90%;
+    place-self: end;
+    transform: rotate(41deg);
+  }
+
+  .b3 {
+    grid-area: 2/9/13/11;
+    place-self: center
+  }
+
+  .b1,
+  .b3 {
+    z-index: 101;
+  }
+
+  .hole {
+    background-color: #66635b;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
