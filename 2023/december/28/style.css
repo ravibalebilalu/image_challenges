@@ -1,0 +1,99 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #81f499;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .left-eye,
+  .right-eye,
+  .nose,
+  .mouth {
+    background-color: #706c61;
+    border-radius: 40px;
+  }
+
+  .left-eye,
+  .right-eye {
+    height: 83%;
+    width: 100%;
+    place-self: center;
+    display: grid;
+    align-items: end;
+  }
+
+  .left-eye {
+    grid-area: 2/3/8/5;
+    justify-items: end;
+  }
+
+  .right-eye {
+    grid-area: 2/9/8/11;
+  }
+
+  .nose {
+    grid-area: 7/6/10/8;
+    width: 60%;
+    height: 80%;
+    border-radius: 50%;
+    place-self: end center
+  }
+
+  .mouth {
+    grid-area: 11/4/12/10;
+    width: 92%;
+    justify-self: center;
+    border-radius: 40px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .sclera {
+    background-color: #81f499;
+    height: 70%;
+    width: 80%;
+    border-radius: 30px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .ball {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #706c61;
+  }
+
+  .left-eye .ball {
+    margin-top: 90px;
+  }
+
+  .right-eye .ball {
+    margin-top: 30px;
+  }
+
+  .mask {
+    height: 65%;
+    width: 99%;
+    border-radius: 50px;
+    background-color: #81f499;
+  }
