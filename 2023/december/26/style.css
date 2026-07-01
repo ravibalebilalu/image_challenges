@@ -1,0 +1,67 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: grid;
+
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    background-color: #7fb685;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: 120px auto 120px/120px auto 120px;
+
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    background-color: #f2c57c;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .box2 {
+    grid-column: 3/4;
+  }
+
+  .box3 {
+    grid-column: 2/3;
+  }
+
+  .box4 {
+    grid-area: 3/1/4/2;
+  }
+
+  .box5 {
+    grid-area: 3/3/4/4;
+  }
+
+  .box {
+    background-color: #7fb685;
+    height: 60%;
+    width: 20%;
+  }
+
+  .circle {
+
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #7fb685;
+  }
