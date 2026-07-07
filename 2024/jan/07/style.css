@@ -1,0 +1,108 @@
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #000;
+  }
+
+  * {
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+
+  }
+
+  .mainbox {
+      width: 475px;
+      height: 475px;
+      background: #fc6dab;
+      position: relative;
+      display: grid;
+      grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+
+  }
+
+  .box {
+      background-color: #f3fae1;
+  }
+
+  .b1 {
+      grid-area: 4/6/10/8;
+    height:90%;
+    width:105%;
+    place-self:center;
+  }
+
+  .b2 {
+      grid-area: 6/4/8/10;
+       height:105%;
+    width:90%;
+    place-self:center;
+  }
+
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7,
+  .b8,
+  .b9,
+  .b10,
+  .b11 {
+      height: 70%;
+      width: 70%;
+      
+  }
+
+  .b3 {
+      grid-area: 2/6/4/8;
+place-self: start center;
+  }
+
+  .b4 {
+      grid-area: 10/6/12/8;
+place-self: end center;
+  }
+
+  .b5 {
+      grid-area: 6/2/8/4;
+      place-self: center start;
+  }
+
+  .b6 {
+      grid-area: 6/10/8/12;
+      place-self: center end;
+  }
+
+  .b7 {
+      grid-area: 4/4/6/6;
+  }
+
+  .b8 {
+      grid-area: 4/8/6/10;
+      place-self:  start end;
+  }
+
+  .b9 {
+      grid-area: 8/8/10/10;
+      place-self:   end;
+  }
+
+  .b10 {
+      grid-area: 8/4/10/6;
+      place-self:   end start;
+  }
+
+  .b11 {
+      grid-area: 6/6/8/8;
+      background-color: #fc6dab;
+      transform: rotate(45deg);
+     place-self: center;
+  }
