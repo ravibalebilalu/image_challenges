@@ -1,0 +1,94 @@
+   body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #000;
+   }
+
+   * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+
+   }
+
+   .mainbox {
+     width: 475px;
+     height: 475px;
+     background: #697268;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+   }
+
+   .box {
+     background-color: #e2e8dd;
+     height: 80%;
+     width: 95%;
+     align-self: center;
+   }
+
+   .leftbox {
+     grid-area: 4/1/10/7;
+     clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%);
+     display: grid;
+
+
+   }
+
+   .rightbox {
+     grid-area: 4/7/10/-1;
+     justify-self: end;
+     clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 40% 100%, 0% 50%);
+     display: grid;
+   }
+
+   .topbox {
+     grid-area: 1/5/8/9;
+     align-self: start;
+     justify-self: center;
+     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 95%, 0% 60%);
+     display: grid;
+   }
+
+   .bottombox {
+     grid-area: 6/5/-1/9;
+     align-self: end;
+     justify-self: center;
+     display: grid;
+     clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0% 100%, 0% 35%);
+   }
+
+   .circle {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     background-color: #697268;
+   }
+
+   .leftbox .circle {
+     place-self: center end;
+     margin-right:35px;
+   }
+
+   .rightbox .circle {
+     place-self: center start;
+     margin-left: 35px;
+   }
+
+   .topbox .circle {
+     place-self: end center;
+     margin-bottom:45px;
+   }
+
+   .bottombox .circle {
+     place-self: start center;
+     margin-top: 35px;
+   }
