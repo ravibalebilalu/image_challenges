@@ -1,0 +1,86 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background: #5e574d;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .box {
+    background-color: #9dad6f;
+  }
+
+  .topbox {
+    grid-area: 2/5/4/11;
+    transform: perspective(400px) rotate(20deg) skew(22deg);
+    height:70%;
+    width:80%;
+
+  }
+
+  .leftbox {
+    grid-area: 4/6/10/8;
+    width: 62%;
+    height: 80%;
+    align-self: center;
+    transform: perspective(400px) rotate(0deg) skew(-12deg);
+
+  }
+
+  .rightbox {
+    grid-area: 4/7/10/9;
+    width: 62%;
+    height: 80%;
+    justify-self: end;
+    align-self: center;
+    transform: perspective(400px) rotate(0deg) skew(-12deg);
+  }
+
+  .bottombox {
+    grid-area: 10/5/12/11;
+    transform: perspective(400px) rotate(20deg) skew(22deg);
+        height:70%;
+    width:80%;
+    align-self:center;
+     margin-left:13px;
+    margin-top:15px;
+  }
+
+
+
+  .centerbar-left {
+    grid-area: 6/1/8/7;
+    height: 30%;
+    place-self: center;
+    width: 100%;
+  }
+
+  .centerbar-right {
+    grid-area: 6/8/8/13;
+    height: 30%;
+    place-self: center;
+    width: 100%;
+  }
