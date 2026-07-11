@@ -1,0 +1,96 @@
+  body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #000;
+   }
+
+   * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+
+   }
+
+   .mainbox {
+     width: 475px;
+     height: 475px;
+     background: #6d597a;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+
+   }
+
+   .container {
+     background-color: #e56b6f;
+     height: 60%;
+     width: 87%;
+     place-self: center;
+     display: grid;
+     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+   }
+
+   .box {
+     background-color: #6d597a;
+
+   }
+
+   .b1,
+   .b3 {
+     height: 33%;
+     width: 33%;
+     place-self: center;
+   }
+
+   .b2 {
+     height: 75%;
+     width: 80%;
+     place-self: start center;
+     display: grid;
+   }
+
+   .diamond {
+     height: 40px;
+     width: 40px;
+     background-color: #e56b6f;
+     transform: rotate(45deg);
+     place-self: end center;
+     margin: 20px;
+
+   }
+
+   .b4 {
+     background-color: #6d597a;
+     grid-column: 1/-1;
+     width: 83%;
+      
+     justify-self: center;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+   }
+
+   .d2,
+   .d3,
+   .d4 {
+     margin: 20px;
+   }
+
+   .d2 {
+     place-self: start;
+
+   }
+
+   .d3 {
+     place-self: center;
+   }
+
+   .d4 {
+     place-self: start end;
+   }
