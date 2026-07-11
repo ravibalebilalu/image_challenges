@@ -1,0 +1,75 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background: #44344f;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .bar {
+    background-color: #98a6d4;
+    width: 37%;
+    height: 85%;
+    border-radius: 30px;
+    place-self: center;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .box1 {
+    grid-area: 1/2/7/12;
+
+  }
+
+  .box2 {
+    grid-area: 4/2/10/12;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .box2 .bar {
+    width: 23%;
+    margin: 45px;
+  }
+
+  .box2 .bar:nth-child(1) {
+    justify-self: end;
+  }
+
+  .box2 .bar:nth-child(2) {
+    justify-self: start;
+  }
+
+  .box3 {
+    grid-area: 7/2/13/12;
+
+  }
