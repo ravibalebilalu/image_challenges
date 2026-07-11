@@ -1,0 +1,82 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background: #eaac8b;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .box1 {
+    grid-area: 2/4/12/10;
+    background-color: #355070;
+    width: 77%;
+    height: 92%;
+    place-self: center;
+  }
+
+  .box2 {
+
+    grid-area: 1/4/13/10;
+    display: grid;
+    padding:15px;
+  }
+
+  .smallcircle {
+    height: 80px;
+    width: 80px;
+    background-color: #355070;
+    border: 10px solid #eaac8b;
+    border-radius: 50%;
+
+  }
+
+  .sm1 {
+    place-self: start center;
+  }
+
+  .sm2 {
+    place-self: end center;
+  }
+
+  .box3 {
+
+    grid-area: 3/3/11/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-self: center;
+    place-items: center;
+    gap:25px;
+  }
+
+
+  .bigcircle {
+    height: 160px;
+    width: 160px;
+    background-color: #355070;
+    border: 20px solid #eaac8b;
+    border-radius: 50%;
+  }
+ 
