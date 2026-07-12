@@ -1,0 +1,87 @@
+   body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .box1 {
+
+    grid-area: 2/2/12/12;
+    height: 92%;
+    width: 85%;
+    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+     
+  }
+ 
+  .box {
+    background-color: #fff07c;
+
+  }
+
+  .triangle {
+    background-color: #000000;
+    width: 90%;
+    height: 80%;
+    place-self: center;
+  }
+
+  .t1 {
+    grid-area: 2/2/5/12;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+
+
+  }
+
+  .t2 {
+    grid-area: 10/2/12/12;
+    clip-path: polygon(0% 0%, 92% 100%, 0% 100%);
+    align-self: end;
+    margin-bottom: 15px;
+  }
+
+  .diamond {
+    height: 35px;
+    width: 35px;
+    background-color: #fff07c;
+    transform: rotate(45deg);
+    place-self: center;
+  }
+
+  .d1 {
+    grid-area: 6/1/7/3;
+
+  }
+
+  .d2 {
+    grid-area: 8/11/9/13;
+
+  }
+  
