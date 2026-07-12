@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+}
+
+.mainbox {
+  width: 475px;
+  height: 475px;
+  background-color: #95190c;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+}
+
+.bar,
+.box {
+  background-color: #e3b505;
+  height: 92%;
+  width: 130%;
+}
+
+.b1 {
+  grid-area: 2/2/12/3;
+
+  place-self: start center;
+}
+
+.b2 {
+  grid-area: 2/5/12/6;
+  place-self: center;
+}
+
+.b3 {
+  grid-area: 2/8/12/9;
+  place-self: start center;
+}
+
+.b4 {
+  grid-area: 2/11/12/12;
+  place-self: center;
+}
+
+.box {
+  height: 90%;
+}
+
+.bx1 {
+  grid-area: 8/3/9/5;
+  align-self: end;
+
+}
+
+.bx2 {
+  grid-area: 5/6/6/8;
+  align-self: center;
+
+}
+
+.bx3 {
+  grid-area: 9/9/10/11;
+  align-self: center;
+}
+
+.circle {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: #e3b505;
+  place-self: center;
+}
+
+
+.c1 {
+  grid-area: 6/3/8/5;
+}
+
+.c2 {
+  grid-area: 6/6/8/8;
+}
+
+.c3 {
+  grid-area: 7/9/9/11;
+}
