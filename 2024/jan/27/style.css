@@ -1,0 +1,74 @@
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #6c5a49;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 147px 180px 147px;
+    place-items: center;
+  }
+
+  .triangle,
+  .box {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .triangle {
+    background-color: #d0fcb3;
+    width: 25%;
+    
+  }
+
+  .t1 {
+
+    clip-path: polygon(50% 20%, 100% 101%, 0% 101%);
+     
+  }
+
+  .box {
+    border: 35px solid #d0fcb3;
+    width: 75%;
+    border-width: 35px 0px 35px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .t2 {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 80%);
+
+  }
+
+  .diamond {
+    height: 48px;
+    width: 48px;
+    background-color: #d0fcb3;
+  }
+
+  .diamond:nth-child(even) {
+    transform: rotate(45deg);
+  }
