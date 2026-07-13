@@ -1,0 +1,69 @@
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: #000;
+ }
+
+ * {
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+
+ }
+
+ .mainbox {
+   width: 475px;
+   height: 475px;
+   background-color: #f61067;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+   place-items: center;
+ }
+
+ .bar {
+   background-color: #5e239d;
+ }
+
+ .verbar {
+   grid-area: 1/6/13/8;
+   width: 30%;
+   height: 100%;
+ }
+
+ .horbar {
+   grid-area: 6/1/8/13;
+   width: 100%;
+   height: 30%;
+ }
+
+ .centerbar {
+   grid-area: 6/6/8/8;
+   height: 115%;
+   width: 115%;
+   transform: rotate(45deg);
+ }
+
+ .leftbar {
+   grid-area: 1/1/5/3;
+   height: 110%;
+   width: 130%;
+   transform: perspective(400px) rotate(6deg) skew(23deg);
+   transform-origin: top;
+ }
+
+ .rightbar {
+   grid-area: 9/11/13/13;
+   height: 110%;
+   width: 130%;
+   transform: perspective(400px) rotate(6deg) skew(23deg);
+   transform-origin: bottom;
+ }
