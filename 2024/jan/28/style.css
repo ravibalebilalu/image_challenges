@@ -1,0 +1,98 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #bc4b51;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 80px 315px 80px;
+
+  }
+
+  .upper,
+  .lower {
+    background-color: #f4a259;
+  }
+
+ 
+
+  .middle {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .lower {}
+
+  .ball {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #bc4b51;
+    position: absolute;
+  }
+
+  .b1 {
+    top: -70px;
+    left: -70px;
+  }
+
+  .b2 {
+    top: 390px;
+    left: 400px;
+  }
+
+  .bar {
+    grid-area: 1/6/13/8;
+    background-color: #f4a259;
+    width: 65%;
+    height: 100%;
+    place-self: center;
+  }
+
+  .bigcircle {
+    background-color: #f4a259;
+    grid-area: 4/5/10/9;
+    border-radius: 50%;
+  }
+
+  .smallcircle {
+    background-color: #bc4b51;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+
+  }
+
+  .sc1 {
+    grid-area: 4/3/10/7;
+    justify-self: start;
+    margin-right: 30px;
+
+  }
+
+  .sc2 {
+    grid-area: 4/7/10/11;
+    justify-self: end;
+    margin-left: 30px;
+  }
