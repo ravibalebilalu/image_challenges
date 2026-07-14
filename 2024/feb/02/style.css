@@ -1,0 +1,82 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #e0b0d5;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+
+
+  }
+
+  .box {
+    background-color: #ffffff;
+  }
+
+  .b1 {
+    height: 83%;
+    width: 57%;
+    place-self: center;
+    display: grid;
+    grid-template: 60px 50px auto/1fr;
+
+  }
+
+  .leye,
+  .reye,
+  .nose,
+  .mouth {
+    background-color: #e0b0d5;
+  }
+
+  .eyes {
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+  }
+
+  .leye {
+    height: 40px;
+    width: 40px;
+    margin-left:40px;
+    
+  }
+
+  .reye {
+    height: 40px;
+    width: 70px;
+    margin-right:40px;
+  }
+
+  .nose {
+    height:85%;
+    width:11%;
+    place-self:center;
+    margin-top:70px;
+  }
+
+  .mouth {
+      height:68%;
+    width:73%;
+    place-self:center;
+  }
