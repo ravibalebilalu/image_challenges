@@ -1,0 +1,85 @@
+   body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #c83e4d;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .box {
+    border: 45px solid #f4b860;
+
+    width: 90%;
+    height: 85%;
+    place-self: center;
+    margin-left: 25px;
+  }
+
+  .b1 {
+    grid-area: 2/3/7/10;
+
+  }
+
+  .b2 {
+    height: 81%;
+    grid-area: 8/3/12/10;
+    align-self: end;
+  }
+
+  .bar {
+    background-color: #f4b860;
+  }
+
+  .br1 {
+    grid-area: 1/3/10/5;
+    width: 58%;
+    height: 90%;
+    place-self: end center;
+    margin-left: 20px;
+  }
+
+  .br2 {
+    grid-area: 4/7/5/12;
+    height: 115%;
+    width:82%;
+    justify-self:center;
+  }
+
+  .br3 {
+    grid-area: 8/2/10/8;
+    height: 57%;
+    width: 85%;
+    place-self: end center;
+    margin-bottom: 4px;
+  }
+
+  .br4 {
+    grid-area: 4/3/6/6;
+    background-color: #c83e4d;
+    height: 30%;
+    align-self: center;
+    margin-top: 15px;
+  }
