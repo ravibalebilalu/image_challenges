@@ -1,0 +1,93 @@
+   body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #000;
+   }
+
+   * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+
+   }
+
+   .mainbox {
+     width: 475px;
+     height: 475px;
+     background-color: #9d8189;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+   }
+
+   .box {
+
+     border-width: 40px;
+     border-color: #ffcad4;
+     border-style: solid;
+     place-self: end center;
+     margin-bottom: 10px;
+   }
+
+   .b1 {
+     grid-area: 1/1/8/13;
+     width: 87%;
+     height: 77%;
+
+     border-width: 0px 40px 40px 40px;
+   }
+
+   .b2 {
+     grid-area: 1/1/8/13;
+     height: 75%;
+     width: 45%;
+     place-self: end center;
+     border: 40px solid #ffcad4;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     padding: 30px 0px;
+     z-index: 100;
+   }
+
+   .b3,
+   .b4 {
+     height: 30px;
+     width: 30px;
+     border: none;
+     background-color: #ffcad4;
+   }
+
+   .b3 {
+     place-self: start center;
+   }
+
+   .b4 {
+     place-self: end center;
+   }
+
+   .b5 {
+     grid-area: 5/1/6/13;
+     border: none;
+     background-color: #9d8189;
+     height: 70%;
+     width: 100%;
+   }
+
+   .b6 {
+     grid-area: 7/4/13/10;
+     height: 75%;
+     width: 60%;
+     place-self:start center;
+     border-bottom: none;
+     border-top:none;
+   }
+   
