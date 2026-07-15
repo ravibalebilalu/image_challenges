@@ -1,0 +1,92 @@
+   body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: #000;
+ }
+
+ * {
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+
+ }
+
+ .mainbox {
+   width: 475px;
+   height: 475px;
+   background-color: #a5c882;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+
+   grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+ }
+
+ .b1,
+ .b3 {
+   border: 27px solid #f7dd72;
+   border-width: 27px 0px 0px 27px;
+
+ }
+
+ .b2,
+ .b4 {
+   background-color: #f7dd72;
+   display: flex;
+   justify-content: center;
+   
+ }
+
+ .b1 {
+   grid-area: 2/1/11/6;
+   height: 85%;
+   width: 75%;
+   place-self: center;
+   margin-bottom: 10px;
+ }
+
+ .b2 {
+   grid-area: 3/3/12/8;
+   height: 85%;
+   width: 85%;
+   place-self: center start;
+   margin-top: 10px;
+ }
+
+ .b3 {
+   grid-area: 2/6/11/11;
+   height: 85%;
+   width: 83%;
+   place-self: center end;
+   margin-right: 10px;
+   margin-bottom: 10px;
+
+ }
+
+ .b4 {
+   grid-area: 3/8/12/13;
+   height: 85%;
+   width: 85%;
+   place-self: center start;
+   align-items: end;
+ }
+
+ .circle {
+   height: 65px;
+   width: 65px;
+   background-color: #a5c882;
+   border-radius: 50%;
+ }
+  .b2 .circle{
+    margin-top:24px;
+  }
+    .b4 .circle{
+    margin-bottom:10px;
+  }
