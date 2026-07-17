@@ -1,0 +1,86 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #A54657;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/ repeat(12, 1fr);
+
+  }
+
+  .bottom-box {
+    grid-area: 6/2/13/12;
+    background-color: #582630;
+    border-radius: 50%;
+    transform: rotateX(-47deg);
+    margin-top: 40px;
+    width: 90%;
+    height: 130%;
+    place-self: start center;
+    display: grid;
+    place-items: end center;
+  }
+
+  .seed {
+    background-color: #A54657;
+    transform: rotateX(-27deg);
+    border-radius: 50%;
+    height: 70%;
+    width: 96%;
+  }
+
+  .middlebar {
+    grid-area: 6/5/9/9;
+    background-color: #582630;
+    width: 80%;
+    justify-self: center;
+  }
+
+
+  .topbox1 {
+    grid-area: 2/2/8/12;
+    width: 90%;
+    height: 93%;
+    justify-self: center;
+    margin-top: 3px;
+    background-color: #582630;
+    display: grid;
+    place-items: center;
+  }
+
+  .topbox2 {
+    border: 10px solid #A54657;
+    height: 75%;
+    width: 80%;
+    z-index: 100;
+    border-width: 0px 40px 40px 40px;
+  }
+
+  .topbox3 {
+    grid-area: 2/5/4/9;
+    width:77%;
+    justify-self:center;
+    background-color: #A54657;
+
+  }
