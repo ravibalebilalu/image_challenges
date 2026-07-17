@@ -1,0 +1,51 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #a54657;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+ padding:41px 42px 48px 45px;
+  }
+
+  .box {
+    display: grid;
+    place-items: center;
+  }
+
+  .box:nth-child(odd) {
+    background-color: #f26157;
+  }
+
+  .center {
+    height: 52%;
+    width: 52%;
+    background-color: #a54657;
+    transform: rotate(45deg);
+  }
+
+  .box:nth-child(even) .center {
+    background-color: #f26157;
+    border-radius: 50%;
+  }
