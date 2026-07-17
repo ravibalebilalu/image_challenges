@@ -1,0 +1,67 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #399E5A;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center
+  }
+
+
+  .leftpart,
+  .rightpart {
+    background-color: #26532B;
+    height: 80%;
+    width: 74%;
+    display: grid;
+  }
+
+  .leftpart {
+    justify-self: end;
+  }
+
+  .rightpart {
+    justify-self: start;
+    transform: rotate(180deg);
+  }
+
+  .bar {
+    background-color: #399E5A;
+    height: 47%;
+    width: 68%;
+    align-self: end;
+    display:grid;
+    place-items:center start;
+    position:relative;
+  }
+
+  .diamond{
+    height:27px;
+    width:27px;
+    background-color:#26532B;
+    transform:rotate(45deg);
+    position: absolute;
+    left:9px;
+  }
