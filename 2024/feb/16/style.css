@@ -1,0 +1,98 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #D1D5DE;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/ repeat(12, 1fr);
+
+  }
+
+  .bar,
+  .box {
+    background-color: #8AAA79;
+  }
+
+  .b1 {
+    grid-area: 1/1/3/8;
+    height: 70%;
+    align-self: end;
+    border-radius: 0% 35px 0% 0%;
+  }
+
+
+  .b2 {
+    grid-area: 1/6/8/8;
+    height: 75%;
+    width: 70%;
+    place-self: end;
+  }
+
+  .b3 {
+    grid-area: 3/1/6/11;
+    height: 30%;
+    width: 96%;
+    border-radius: 0px 0px 20px 0px;
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .b4 {
+    grid-area: 1/9/6/11;
+    height: 83%;
+    width: 55%;
+    justify-self: end;
+    margin-right: 16px;
+    border-radius: 0px 0px 20px 0px;
+  }
+
+  .bx1 {
+    grid-area: 7/4/13/11;
+    place-self: end start;
+    height: 97%;
+    width: 96%;
+    border-radius: 30px 30px 0px 0px;
+    display: grid;
+    place-items: end center;
+  }
+
+  .bx2 {
+    background-color: #D1D5DE;
+    height: 75%;
+    width: 58%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  .circle {
+    background-color: #8AAA79;
+    height: 75px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  .c2 {
+    place-self: end;
+  }
