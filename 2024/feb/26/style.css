@@ -1,0 +1,90 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #615756;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .container1 {
+    grid-area: 1/1/-1/-1;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    transform: rotate(45deg);
+  }
+
+  .plus1,
+  .plus2 {
+    background-color: #503d3f;
+    place-self: center;
+
+  }
+
+  .plus1 {
+    grid-area: 6/1/8/13;
+    height: 22%;
+    width: 120%;
+  }
+
+  .plus2 {
+    grid-area: 1/6/13/8;
+    width: 22%;
+    height: 120%;
+  }
+
+  .container2 {
+    grid-area: 6/1/8/13;
+    height: 22%;
+    width: 100%;
+    background-color: #503d3f;
+    place-self: center;
+    margin-bottom: 10px;
+  }
+
+  .container3 {
+
+    grid-area: 3/3/11/11;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    row-gap:20px;
+    column-gap:20px;
+  }
+
+  .circle {
+    background-color: #503d3f;
+    border-radius: 50%;
+    height: 75%;
+    width: 75%;
+    place-self: center;
+  }
+
+  .c5 {
+    grid-area: 6/6/8/8;
+    height: 80%;
+    width: 80%;
+    margin-bottom:10px;
+  }
+  
