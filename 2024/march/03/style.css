@@ -1,0 +1,43 @@
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: #000;
+ }
+
+ * {
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+
+ }
+
+ .mainbox {
+   width: 490px;
+   height: 490px;
+   background-color: #23395b;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template:  1fr / 1fr;
+ }
+ h1{
+  grid-template: 1/1/-1/-1;
+  place-self: center;
+  color: green;
+  animation: h1anim .9s infinite;
+ }
+
+ @keyframes  h1anim{
+  0%{color: green;transform: scale(1);}
+  50%{color:  #23395b; transform: scale(1.2);}
+  100%{color: green;transform: scale(1);}
+ }
+ 
+ 
