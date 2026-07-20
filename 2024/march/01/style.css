@@ -1,0 +1,104 @@
+   body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #0f7173;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .container1 {
+    grid-area: 2/3/12/12;
+    height: 103%;
+    width: 103%;
+    place-self: center start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .box {
+    background-color: #ee4b6a;
+    width: 70px;
+    height: 70px;
+  }
+
+  .b1 {
+    place-self: end start;
+  }
+
+  .b2 {
+    place-self: center start;
+  }
+
+  .b3 {
+    place-self: start end;
+  }
+
+  .b4,
+  .b5,
+  .b6,
+  .b7,
+  .b8,
+  .b9 {
+    height: 84%;
+    width: 84%;
+    transform: rotate(45deg);
+    transform-origin: top;
+    justify-self: end;
+  }
+
+  .b4 {
+    grid-area: 2/2/5/5;
+  }
+
+  .b5 {
+    grid-area: 2/3/5/6;
+  }
+
+  .b6 {
+    grid-area: 2/4/5/7;
+  }
+
+  .b7,
+  .b8,
+  .b9 {
+    align-self: center;
+    
+  }
+
+  .b7 {
+    grid-area: 10/10/13/13;
+   justify-self:end;
+  }
+
+  .b8 {
+    grid-area: 10/9/13/12;
+      justify-self:center;
+  }
+
+  .b9 {
+    grid-area: 10/8/13/11;
+     justify-self:start;
+  
+  }
