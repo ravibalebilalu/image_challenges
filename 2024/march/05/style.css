@@ -1,0 +1,41 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #827081;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: 1fr / 1fr;
+  }
+
+  h1{
+    grid-template: 1/1/-1/-1;
+    place-self: center;
+    animation: anim1 .5s infinite linear;
+  }
+
+  @keyframes anim1{
+    0%{opacity: 1;}
+    50%{opacity: .4;color: rgb(0, 236, 213);}
+    100%{opacity: 1;}
+  }
