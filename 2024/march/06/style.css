@@ -1,0 +1,138 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #587291;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container1 {
+    grid-area: 1/2/5/12;
+  }
+
+  .container2 {
+    grid-area: 3/2/6/12;
+
+    height: 62%;
+    width: 100%;
+    place-self: center;
+    margin-top: 14px;
+  }
+
+  .container3 {
+    grid-area: 5/2/8/12;
+    margin-top: 12px;
+  }
+
+  .box {
+    background-color: #ffb30f;
+  }
+
+  .b11,
+  .b12,
+  .b31,
+  .b32 {
+    height: 75px;
+    width: 75px;
+    transform: rotate(45deg);
+    margin-bottom: 14px;
+  }
+
+  .b11,
+  .b31 {
+    place-self: center start;
+  }
+
+  .b12,
+  .b32 {
+    place-self: center end;
+  }
+
+  .b21,
+  .b22 {
+    width: 40%;
+    height: 100%;
+  }
+
+  .b21 {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  }
+
+  .b22 {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+  }
+
+  .b22 {
+    place-self: end;
+  }
+
+  .b4 {
+    grid-area: 4/6/9/8;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    height: 90%;
+    align-self: end;
+  }
+
+  .b5 {
+    grid-area: 8/2/10/12;
+    height: 57%;
+    width: 84%;
+    place-self: start center;
+  }
+
+  .b6 {
+    grid-area: 8/6/11/8;
+    height: 70%;
+  }
+
+  .b7 {
+    grid-area: 8/3/11/6;
+    width: 60%;
+    height: 100%;
+    place-self: start center;
+    margin-left: 22px;
+  }
+
+  .b8 {
+    grid-area: 8/8/11/11;
+    width: 60%;
+    height: 100%;
+    place-self: start center;
+    margin-left: -24px;
+  }
+
+  .b9 {
+    grid-area: 10/6/13/8;
+    place-self: end center;
+    height: 75%;
+    width: 60%;
+  }
