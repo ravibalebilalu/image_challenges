@@ -1,0 +1,48 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #292323;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #da4167;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+  }
+
+  .triangle {
+    grid-area: 2/1/12/13;
+    background-color: #f0eff4;
+    clip-path: polygon(49% 3%, 92% 97%, 6% 97%);
+
+  }
+
+  .mask {
+    grid-area: 4/1/12/13;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+
+    z-index: 100;
+    margin: 5px 0px
+  }
+
+  .bar {
+    background-color: #da4167;
+    height: 24px;
+    transform: rotate(10deg);
+
+  }
