@@ -1,0 +1,98 @@
+   body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #292323;
+   }
+
+   * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   .mainbox {
+     width: 475px;
+     height: 475px;
+     background-color: #3d2645;
+     position: relative;
+     overflow: hidden;
+     display: grid;
+     grid-template: 1fr/1fr;
+     place-items: center;
+   }
+
+   .container1,
+   .container2 {
+     grid-area: 1/1/-1/-1;
+     height: 85%;
+     width: 72%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+
+   }
+
+   .container2 {
+     transform: rotate(90deg);
+   }
+
+   .bar {
+     background-color: #f4fdaf;
+     width: 22%;
+     border-radius: 20px;
+   }
+
+   .b2,
+   .b5 {
+     justify-self: center;
+   }
+
+   .b3,
+   .b6 {
+     justify-self: end;
+   }
+
+   .container3 {
+     grid-area: 1/1/-1/-1;
+
+     display: grid;
+     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+     place-items: center;
+     height: 65%;
+     width: 65%;
+   }
+
+   .box,
+   .circle {
+     background-color: #f4fdaf;
+
+
+   }
+
+   .circle {
+     border-radius: 50%;
+     height: 72px;
+     width: 72px;
+   }
+
+   .c1 {
+     margin: 0px 10px 6px 0px
+   }
+
+   .c2 {
+     margin: 15px 0px 0px 10px
+   }
+
+   .bx1 {
+     margin: 10px 10px 20px 20px
+   }
+
+   .bx2 {
+     margin: 20px 20px 10px 10px
+   }
+
+   .box {
+     height: 65px;
+     width: 65px;
+     transform: rotate(45deg);
+   }
