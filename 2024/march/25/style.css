@@ -1,0 +1,51 @@
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: #292323;
+ }
+
+ * {
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ .mainbox {
+   width: 475px;
+   height: 475px;
+   background-color: #ef798a;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template: 1fr/1fr;
+ }
+
+ .circle {
+   grid-area: 1/1/-1/-1;
+   border-radius: 50%;
+   height: 83%;
+   width: 83%;
+   place-self: center;
+ }
+
+ .c1 {
+   border: 60px solid rgb(55, 14, 99);
+   border-color: transparent rgb(55, 14, 99) transparent rgb(55, 14, 99);
+   transform: rotate(-45deg);
+ }
+
+ .c2 {
+   height: 37%;
+   width: 37%;
+   border: 20px solid rgb(55, 14, 99);
+   display: grid;
+   place-items: center;
+ }
+
+ .c3{
+ 
+  background-color: rgb(55, 14, 99);
+  height: 80%;
+  width: 80%;
+ }
