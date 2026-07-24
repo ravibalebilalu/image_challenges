@@ -1,0 +1,62 @@
+   body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #292323;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #394f49;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 30px;
+  }
+
+  .box {
+    height: 75%;
+    width: 75%;
+    background-color: #f4fdaf;
+    display: grid;
+
+  }
+
+  .b1 {
+    place-self: end;
+
+  }
+
+  .b2 {
+    place-self: end start;
+    transform: rotate(90deg);
+  }
+
+  .b3 {
+    place-self: start end;
+    transform: rotate(-90deg);
+  }
+
+  .triangle {
+    background-color: #394f49;
+    height: 70px;
+    width: 70px;
+  }
+
+  .tr1 {
+    place-self: start end;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  }
+
+  .tr2 {
+    place-self: end start;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  }
