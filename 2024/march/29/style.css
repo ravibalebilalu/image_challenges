@@ -1,0 +1,84 @@
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #292323;
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .mainbox {
+      width: 475px;
+      height: 475px;
+      background-color: #70a9a1;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template: 1fr/ 1fr;
+
+    }
+
+    .container1,
+    .container2 {
+      grid-area: 1/1/-1/-1;
+      display: grid;
+      grid-template: 1fr 1fr/1fr 1fr;
+      row-gap: 50px;
+      column-gap: 60px;
+    }
+
+
+    .circle {
+      background-color: #cfd7c7;
+      border-radius: 50%;
+      height: 65%;
+      width: 65%;
+
+    }
+
+    .traingle {
+      background-color: #cfd7c7;
+      z-index: 100;
+      height: 60%;
+      width: 60%;
+      place-self: center;
+    }
+
+    .c1 {
+      place-self: end;
+    }
+
+    .c2 {
+      place-self: end start;
+    }
+
+    .c3 {
+      place-self: start end;
+    }
+
+    .t1 {
+      clip-path: polygon(0% 0%, 100% 30%, 30% 100%);
+    }
+
+    .t2 {
+      clip-path: polygon(0% 30%, 100% 0%, 70% 100%);
+    }
+
+    .t3 {
+      clip-path: polygon(30% 0%, 3% 100%, 100% 70%);
+    }
+
+    .t4 {
+      clip-path: polygon(70% 0%, 100% 100%, 0% 70%);
+    }
+
+    .c5 {
+      grid-area: 1/1/-1/-1;
+      height: 80px;
+      width: 80px;
+      place-self: center;
+    }
