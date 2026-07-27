@@ -1,0 +1,50 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #accbe1;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding:16px;
+  }
+
+  .circle {
+    background-color: #536b78;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+  }
+
+  .circle:nth-child(odd) {
+    height: 65px;
+    width: 65px;
+  }
