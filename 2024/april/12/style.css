@@ -1,0 +1,44 @@
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+  }
+
+  .mainbox {
+    width: 475px;
+    height: 475px;
+    background-color: #523f38;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: 1fr/1fr;
+    place-items: center;
+
+  }
+
+
+  h1{
+    color: red;
+    animation: anim 1s infinite linear;
+  }
+
+  @keyframes anim{
+    0%{color: red;}
+    50%{color: rgba(255, 0, 64, 0.561);}
+    100%{color: red;}
+  }
+
